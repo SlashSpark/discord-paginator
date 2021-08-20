@@ -33,11 +33,11 @@ class EmbedPaginator {
     }
     getComponents() {
         const row = new discord_js_1.MessageActionRow()
-            .addComponents(new discord_js_1.MessageButton()
+            /*.addComponents(new discord_js_1.MessageButton()
             .setLabel('First')
             .setCustomId('first')
             .setStyle('SECONDARY')
-            .setDisabled(this.pager.hasFirst() ? false : true))
+            .setDisabled(this.pager.hasFirst() ? false : true))*/
             .addComponents(new discord_js_1.MessageButton()
             .setLabel('Previous')
             .setCustomId('previous')
@@ -48,11 +48,11 @@ class EmbedPaginator {
             .setCustomId('next')
             .setStyle('SECONDARY')
             .setDisabled(this.pager.hasNext() ? false : true))
-            .addComponents(new discord_js_1.MessageButton()
+            /*.addComponents(new discord_js_1.MessageButton()
             .setLabel('Last')
             .setCustomId('last')
             .setStyle('SECONDARY')
-            .setDisabled(this.pager.hasLast() ? false : true));
+            .setDisabled(this.pager.hasLast() ? false : true));*/
         return row;
     }
     listenReactions() {
