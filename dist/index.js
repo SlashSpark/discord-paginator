@@ -46,7 +46,7 @@ class EmbedPaginator {
             .addComponents(new discord_js_1.MessageButton()
             .setLabel('Après')
             .setCustomId('next')
-            .setStyle('green'_)
+            .setStyle('green')
             .setDisabled(this.pager.hasNext() ? false : true))
             /*.addComponents(new discord_js_1.MessageButton()
             .setLabel('Last')
